@@ -1,8 +1,8 @@
 # Student-Record-Management-System
 A comprehensive full-stack application for managing student records with Spring Boot, MySQL, React, and AWS.
 
-<img width="1305" height="695" alt="image" src="https://github.com/user-attachments/assets/7b6cd19c-f9a6-4b01-b453-1440b21e4d3c" />
-<img width="1304" height="618" alt="image" src="https://github.com/user-attachments/assets/ed284291-f26c-4c20-b763-7e3c2f7113b5" />
+<img width="1305" height="856" alt="image" src="https://github.com/user-attachments/assets/0e00dbee-3e16-4802-82da-1f735473f065" />
+
 
 
 ## 🛠️ Tech Stack
