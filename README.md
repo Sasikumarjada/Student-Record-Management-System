@@ -2,6 +2,8 @@
 A comprehensive full-stack application for managing student records with Spring Boot, MySQL, React, and AWS.
 
 <img width="1305" height="856" alt="image" src="https://github.com/user-attachments/assets/0e00dbee-3e16-4802-82da-1f735473f065" />
+<img width="1314" height="608" alt="image" src="https://github.com/user-attachments/assets/54ea8956-edb1-43ac-8d49-cc04d424a4ef" />
+
 
 
 
