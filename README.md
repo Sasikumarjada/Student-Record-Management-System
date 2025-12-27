@@ -1,4 +1,4 @@
-# Student-API-Flask-MySQL-Dockerized-GitHub-Actions-EC2
+# Student-Record-Management-System
 A simple RESTful Student Management API built with Flask and MySQL, containerized with Docker, and deployable to an AWS EC2 instance using GitHub Actions.
 
 Features:
