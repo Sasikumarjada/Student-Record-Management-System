@@ -1,0 +1,144 @@
+student-record-management-system/
+│
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── srms/
+│   │   │   │           ├── StudentRecordManagementApplication.java
+│   │   │   │           │
+│   │   │   │           ├── config/
+│   │   │   │           │   ├── CorsConfig.java
+│   │   │   │           │   ├── SecurityConfig.java
+│   │   │   │           │   └── SwaggerConfig.java
+│   │   │   │           │
+│   │   │   │           ├── controller/
+│   │   │   │           │   ├── StudentController.java
+│   │   │   │           │   └── AuthController.java
+│   │   │   │           │
+│   │   │   │           ├── model/
+│   │   │   │           │   ├── Student.java
+│   │   │   │           │   ├── User.java
+│   │   │   │           │   └── Course.java
+│   │   │   │           │
+│   │   │   │           ├── repository/
+│   │   │   │           │   ├── StudentRepository.java
+│   │   │   │           │   ├── UserRepository.java
+│   │   │   │           │   └── CourseRepository.java
+│   │   │   │           │
+│   │   │   │           ├── service/
+│   │   │   │           │   ├── StudentService.java
+│   │   │   │           │   ├── StudentServiceImpl.java
+│   │   │   │           │   ├── UserService.java
+│   │   │   │           │   └── UserServiceImpl.java
+│   │   │   │           │
+│   │   │   │           ├── dto/
+│   │   │   │           │   ├── StudentDTO.java
+│   │   │   │           │   ├── StudentRequestDTO.java
+│   │   │   │           │   ├── StudentResponseDTO.java
+│   │   │   │           │   └── ApiResponse.java
+│   │   │   │           │
+│   │   │   │           ├── exception/
+│   │   │   │           │   ├── ResourceNotFoundException.java
+│   │   │   │           │   ├── GlobalExceptionHandler.java
+│   │   │   │           │   └── ValidationException.java
+│   │   │   │           │
+│   │   │   │           └── util/
+│   │   │   │               ├── JwtUtil.java
+│   │   │   │               └── ValidationUtil.java
+│   │   │   │
+│   │   │   └── resources/
+│   │   │       ├── application.properties
+│   │   │       ├── application-dev.properties
+│   │   │       ├── application-prod.properties
+│   │   │       └── data.sql
+│   │   │
+│   │   └── test/
+│   │       └── java/
+│   │           └── com/
+│   │               └── srms/
+│   │                   ├── controller/
+│   │                   │   └── StudentControllerTest.java
+│   │                   ├── service/
+│   │                   │   └── StudentServiceTest.java
+│   │                   └── repository/
+│   │                       └── StudentRepositoryTest.java
+│   │
+│   ├── pom.xml
+│   ├── .gitignore
+│   └── README.md
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── manifest.json
+│   │
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── StudentForm.jsx
+│   │   │   ├── StudentList.jsx
+│   │   │   ├── StudentTable.jsx
+│   │   │   ├── SearchBar.jsx
+│   │   │   ├── Statistics.jsx
+│   │   │   ├── Header.jsx
+│   │   │   └── Modal.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   ├── studentService.js
+│   │   │   └── authService.js
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── validation.js
+│   │   │   └── constants.js
+│   │   │
+│   │   ├── hooks/
+│   │   │   ├── useStudents.js
+│   │   │   └── useAuth.js
+│   │   │
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   ├── .gitignore
+│   ├── .env.example
+│   └── README.md
+│
+├── aws/
+│   ├── cloudformation/
+│   │   ├── rds-template.yaml
+│   │   ├── ec2-template.yaml
+│   │   └── vpc-template.yaml
+│   │
+│   ├── scripts/
+│   │   ├── deploy-backend.sh
+│   │   ├── deploy-frontend.sh
+│   │   └── setup-db.sh
+│   │
+│   └── README.md
+│
+├── docker/
+│   ├── Dockerfile.backend
+│   ├── Dockerfile.frontend
+│   └── docker-compose.yml
+│
+├── .github/
+│   └── workflows/
+│       ├── backend-ci-cd.yml
+│       └── frontend-ci-cd.yml
+│
+├── docs/
+│   ├── API.md
+│   ├── SETUP.md
+│   ├── DEPLOYMENT.md
+│   └── DATABASE.md
+│
+├── .gitignore
+├── README.md
+└── LICENSE
