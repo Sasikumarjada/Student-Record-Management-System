@@ -1,4 +1,6 @@
 # Student-Record-Management-System
+<img width="1305" height="695" alt="image" src="https://github.com/user-attachments/assets/7b6cd19c-f9a6-4b01-b453-1440b21e4d3c" />
+
 A simple RESTful Student Management API built with Flask and MySQL, containerized with Docker, and deployable to an AWS EC2 instance using GitHub Actions.
 
 Features:
