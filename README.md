@@ -1,64 +1,75 @@
 # Student-Record-Management-System
+A comprehensive full-stack application for managing student records with Spring Boot, MySQL, React, and AWS.
+
 <img width="1305" height="695" alt="image" src="https://github.com/user-attachments/assets/7b6cd19c-f9a6-4b01-b453-1440b21e4d3c" />
 <img width="1304" height="618" alt="image" src="https://github.com/user-attachments/assets/ed284291-f26c-4c20-b763-7e3c2f7113b5" />
 
 
-A simple RESTful Student Management API built with Flask and MySQL, containerized with Docker, and deployable to an AWS EC2 instance using GitHub Actions.
+## 🛠️ Tech Stack
 
-Features:
-- CRUD endpoints for Student
-  - POST /student
-  - GET /students
-  - GET /student/<id>
-  - PUT /student/<id>
-  - DELETE /student/<id>
+**Backend:**
+- Java 17
+- Spring Boot 3.2.0
+- Spring Data JPA
+- Spring Security
+- MySQL 8.0
+- JWT Authentication
+- Swagger/OpenAPI
 
-Tech stack:
-- Python, Flask, Flask-SQLAlchemy
-- MySQL (can run via Docker or external RDS)
-- Docker + docker-compose
-- GitHub Actions for CI/CD
-- Deployment over SSH to an EC2 instance
+**Frontend:**
+- React 18
+- Vite
+- Tailwind CSS
+- Axios
+- Lucide React Icons
 
-Quick start (local, with docker-compose)
-1. Copy the repo locally.
-2. Start services:
-   ```bash
-   docker compose up --build
-   ```
-3. API is available at http://localhost:5000
+**DevOps:**
+- Docker & Docker Compose
+- GitHub Actions CI/CD
+- AWS EC2, RDS, S3
 
-Environment variables used (examples)
-- MYSQL_HOST — host of MySQL (default: db for local compose)
-- MYSQL_PORT — 3306
-- MYSQL_DATABASE — students_db
-- MYSQL_USER — student_user
-- MYSQL_PASSWORD — student_pass
+## 🚀 Quick Start
 
-GitHub Actions CI/CD (deploy to EC2)
-This repo includes `.github/workflows/deploy.yml` which will:
-- Run on push to `main`
-- Copy files to the EC2 host over SCP
-- SSH into EC2 and run `deploy.sh` to build & start the container
+### Prerequisites
+- Java 17+
+- Node.js 18+
+- MySQL 8+
+- Docker (optional)
 
-Secrets required for the workflow
-- EC2_HOST — the public IP or DNS of your EC2 instance
-- EC2_USER — the SSH user (e.g., ubuntu)
-- EC2_SSH_KEY — the SSH private key (use GitHub Actions secret)
-- EC2_SSH_PORT — optional (default 22)
+### Backend Setup
 
-On the EC2 instance
-- Install Docker & Docker Compose
-- Make sure the SSH user in workflow can run docker / docker-compose
-- Optionally create a `.env` in the deployment directory with your DB credentials or ensure the deployment points to an existing RDS/MySQL.
+\`\`\`bash
+cd backend
+mvn clean install
+mvn spring-boot:run
+\`\`\`
 
-Security notes
-- Do NOT store secret keys or DB passwords in the repo.
-- Use GitHub Secrets for all private values and the SSH key.
-- Open the necessary ports (22 for SSH during deploy, 5000 for app if you want public access) in your EC2 security group.
+### Frontend Setup
 
-Next steps / suggestions
-- Add unit & integration tests + a GitHub Actions test workflow
-- Add health and readiness endpoints
-- Add HTTPS / reverse proxy (nginx) in front of the app
-- Use a remote/managed MySQL (RDS) for production
+\`\`\`bash
+cd frontend
+npm install
+npm run dev
+\`\`\`
+
+### Docker Setup
+
+\`\`\`bash
+docker-compose up -d
+\`\`\`
+
+## 📖 API Documentation
+
+Access Swagger UI: http://localhost:8080/api/swagger-ui.html
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (\`git checkout -b feature/AmazingFeature\`)
+3. Commit changes (\`git commit -m 'Add AmazingFeature'\`)
+4. Push to branch (\`git push origin feature/AmazingFeature\`)
+5. Open Pull Request
+
+## 📄 License
+
+MIT License
